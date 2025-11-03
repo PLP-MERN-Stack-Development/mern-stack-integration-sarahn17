@@ -1,0 +1,134 @@
+/* General body */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* App container */
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Blog title */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Create post form */
+.create-post-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-post-form input,
+.create-post-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.create-post-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-post-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Posts list */
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.post-card p {
+  color: #555;
+  line-height: 1.4;
+}
+
+.post-card img {
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+/* Buttons inside post */
+.post-card button {
+  position: absolute;
+  top: 15px;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-size: 12px;
+}
+
+.post-card button.delete-btn {
+  right: 15px;
+  background: #dc3545;
+}
+
+.post-card button.edit-btn {
+  right: 85px;
+  background: #ffc107;
+  color: #333;
+}
+
+/* Edit form inside post */
+.post-card form input,
+.post-card form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.post-card form button {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.post-card form button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.post-card form button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+}
